@@ -1,0 +1,18 @@
+<html>
+    <head>
+    </head>
+
+    <body>
+        <input type ="button" id ="btnclk" value="버튼"> <!--callback 함수부분 제대로 공부하기-->
+        <script>
+            let obj = {
+                handleEvent(event){
+                    alert(event.type);
+                    alert("x 좌표 : "+event.client(x))
+                    alert("y 좌표 : "+event.client(y))
+                }
+            }
+            btnclk.addEventListner('click',obj)
+        </script>
+    </body>
+</html>
